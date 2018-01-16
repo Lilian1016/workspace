@@ -1,0 +1,35 @@
+package edu.fju;
+
+import java.util.Scanner;
+
+public class VendingMachine {
+	
+	public static void main(String[]args){
+		Scanner scanner =new Scanner(System.in);
+		int n=3;
+		int m=0;
+	while(n!=0){
+		
+		String money =scanner.nextLine();
+		n = Integer.parseInt(money);
+		
+		switch(n){
+		case 1:
+			m=m+n;
+			break;
+		case 5:
+			m=m+n;
+			break;
+		case 10:
+			m=m+n;
+			break;
+		case a:
+			if(m>10){
+			m=m-10;
+			
+			}
+		
+		}System.out.print("目前總額:"+m);
+	}
+
+	}}

@@ -1,0 +1,29 @@
+package edu.fju;
+
+import java.util.Scanner;
+
+public class VendingMachine {
+	
+	public static void main(String[]args){
+		Scanner scanner =new Scanner(System.in);
+		int n=3;
+		
+	while(n!=0){
+		int m=0;
+		String money =scanner.nextLine();
+		n = Integer.parseInt(money);
+		switch(n){
+		case 1:
+			m=m+n;
+			break;
+		case 5:
+			m=m+n;
+			break;
+		case 10:
+			m=m+n;
+			break;
+		
+		}System.out.print(m);
+	}
+
+	}}
